@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       gsap.to ("aside", {
-        x: 0,
-        duration: 1
+      x: 0,
+      duration: 1
       });
 
       gsap.to("li", {
@@ -27,6 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
     duration: 1,
     ease: "power2"
   });
+
+  gsap.to ("copy", {
+    opacity:1,
+    x:200,
+    y:0,
+    ease: "power2"
+  });
 })
 
   close.addEventListener('click', () => {
@@ -37,18 +44,18 @@ document.addEventListener('DOMContentLoaded', () => {
       duration: 1
     });
 
-    gsap.to("li", {
+      gsap.to("li", {
       opacity: 0,
       duration: 0
     });
 
-    gsap.to(".hamburger", {
+      gsap.to(".hamburger", {
       opacity: 1,
       duration: 3,
       ease: "elastic"
     });
 
-    gsap.to(".close", {
+      gsap.to(".close", {
       x: -20,
       y: -220,
       duration: 2,
@@ -56,8 +63,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 })
-
-
-
 
 
