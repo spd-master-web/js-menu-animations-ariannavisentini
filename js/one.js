@@ -21,18 +21,17 @@ document.addEventListener('DOMContentLoaded', () => {
       duration:1
    });
 
-    gsap.to(".close", {
-    x: 300,
-    y: 0,
-    duration: 1,
-    ease: "power2"
+      gsap.to(".close", {
+      x: 300,
+      y: 0,
+      duration: 1,
+      ease: "power2"
   });
 
-  gsap.to ("copy", {
-    opacity:1,
-    x:200,
-    y:0,
-    ease: "power2"
+      gsap.to ("copy", {
+      opacity:1,
+      x:200,
+      y:0
   });
 })
 
@@ -56,8 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
       gsap.to(".close", {
-      x: -20,
-      y: -220,
+      x: -10,
+      y: -120,
       duration: 2,
       ease: "power2"
     });
